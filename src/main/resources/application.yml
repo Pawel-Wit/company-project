@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: Company CRUD
+  datasource:
+    username: myuser
+    password: mypassword
+    url: jdbc:postgresql://localhost:5432/mydatabase
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+
