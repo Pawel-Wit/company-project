@@ -33,6 +33,7 @@ public class CompanyEntity {
 
     private String name;
 
+    @Builder.Default
     @OneToMany(cascade = ALL)
     @JoinColumn(name = "company_id")
     private List<DepartmentEntity> departments = new ArrayList<>();
